@@ -45,7 +45,9 @@ const App = () => {
   const [selectedYear, setSelectedYear] = useState("All");
 
   const handleChange = (event) => {
-    setSelectedBrand(event.target.value);
+    const selectedValue = event.target.value;
+    setSelectedBrand(selectedValue);
+    setSelectedYear("All");
   };
 
   const handleFilterByYear = (year) => {
